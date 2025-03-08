@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragcy - Premium Perfume Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container mx-auto px-4 py-3">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="https://i.ibb.co.com/jZ69QSjJ/434556057-937261891654399-891974852024126961-n-3-10.jpg" alt="Fragcy Logo" class="logo-image">
+                    <p class="brand-tagline">Luxury Fragrances</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#men">Men's Collection</a></li>
+                        <li><a href="#women">Women's Collection</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Discover Your Signature Scent</h1>
+            <p>Premium fragrances for discerning individuals</p>
+            <div class="cta-buttons">
+                <a href="#men" class="cta-button">Men's Collection</a>
+                <a href="#women" class="cta-button">Women's Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Fragcy</h2>
+                    <p>At Fragcy, we believe that fragrance is an expression of personality and style. Our curated collection features premium scents from around the world, available in various sizes to suit your needs.</p>
+                    <p>Each fragrance is carefully bottled to preserve its unique character and intensity, ensuring you experience the full depth of these exceptional scents.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-flask"></i>
+                        <h3>Premium Quality</h3>
+                        <p>Authentic fragrances with exceptional longevity</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-vial"></i>
+                        <h3>Multiple Sizes</h3>
+                        <p>From testers to larger bottles for daily use</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Curated Selection</h3>
+                        <p>Handpicked collection of the finest scents</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="collection" id="men">
+        <div class="container">
+            <h2>Men's Fragrances</h2>
+            <p class="collection-intro">Discover our premium collection of men's fragrances, from fresh aquatics to rich orientals.</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f" alt="Acqua Di Gio" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Acqua Di Gio</h3>
+                        <p class="product-price">Starting from ৳490</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('acqua-di-gio')">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f" alt="Black Friday" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Black Friday</h3>
+                        <p class="product-price">Starting from ৳550</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('black-friday')">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f" alt="Creed Aventus" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Creed Aventus</h3>
+                        <p class="product-price">Starting from ৳600</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('creed-aventus')">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569" alt="Intense Café" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Intense Café</h3>
+                        <p class="product-price">Starting from ৳550</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('intense-cafe')">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc" alt="Black XS" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Black XS</h3>
+                        <p class="product-price">Starting from ৳490</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('black-xs')">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f" alt="Cool Water" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Cool Water</h3>
+                        <p class="product-price">Starting from ৳300</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('cool-water')">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f" alt="Dunhill Desire Red" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Dunhill Desire Red</h3>
+                        <p class="product-price">Starting from ৳300</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('dunhill-desire')">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569" alt="Ebra Pura" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Ebra Pura</h3>
+                        <p class="product-price">Starting from ৳300</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('ebra-pura')">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>6ml</th>
+                            <th>8ml</th>
+                            <th>15ml</th>
+                            <th>Tester (2ml)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Acqua Di Gio</td><td>৳490</td><td>৳650</td><td>৳950</td><td>৳165</td></tr>
+                        <tr><td>Black Friday</td><td>৳550</td><td>৳730</td><td>৳990</td><td>৳185</td></tr>
+                        <tr><td>Black XS</td><td>৳490</td><td>৳650</td><td>৳950</td><td>৳165</td></tr>
+                        <tr><td>Cool Water</td><td>৳300</td><td>৳400</td><td>৳650</td><td>৳100</td></tr>
+                        <tr><td>Creed Aventus</td><td>৳600</td><td>৳790</td><td>৳1110</td><td>৳200</td></tr>
+                        <tr><td>Dunhill Desire Red</td><td>৳300</td><td>৳400</td><td>৳650</td><td>৳100</td></tr>
+                        <tr><td>Ebra Pura</td><td>৳300</td><td>৳400</td><td>৳650</td><td>৳100</td></tr>
+                        <tr><td>Ehsas Al Arabia</td><td>৳360</td><td>৳450</td><td>৳750</td><td>৳120</td></tr>
+                        <tr><td>Intense Café</td><td>৳550</td><td>৳730</td><td>৳990</td><td>৳185</td></tr>
+                        <tr><td>Jannat El Firdaus</td><td>৳360</td><td>৳450</td><td>৳750</td><td>৳120</td></tr>
+                        <tr><td>Madawi Gold Edition</td><td>৳550</td><td>৳730</td><td>৳990</td><td>৳185</td></tr>
+                        <tr><td>Mukhallat Al Emirates</td><td>৳490</td><td>৳650</td><td>৳950</td><td>৳165</td></tr>
+                        <tr><td>Musk Cherry</td><td>৳300</td><td>৳400</td><td>৳750</td><td>৳100</td></tr>
+                        <tr><td>Musk Lavender</td><td>৳390</td><td>৳490</td><td>৳850</td><td>৳130</td></tr>
+                        <tr><td>Musk Vanilla</td><td>৳300</td><td>৳400</td><td>৳650</td><td>৳100</td></tr>
+                        <tr><td>Nishane Hacivat</td><td>৳550</td><td>৳730</td><td>৳950</td><td>৳185</td></tr>
+                        <tr><td>Oud Al Layl</td><td>৳490</td><td>৳650</td><td>৳950</td><td>৳165</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="collection" id="women">
+        <div class="container">
+            <h2>Women's Fragrances</h2>
+            <p class="collection-intro">Explore our exquisite selection of women's fragrances, from floral bouquets to sophisticated orientals.</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1541643600914-78b084683601" alt="Black Opium" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Black Opium</h3>
+                        <p class="product-price">Starting from ৳550</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('black-opium')">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1590736704728-f4730bb30770" alt="Delina" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Delina</h3>
+                        <p class="product-price">Starting from ৳600</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('delina')">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539" alt="Gucci Bloom" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Gucci Bloom</h3>
+                        <p class="product-price">Starting from ৳550</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('gucci-bloom')">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539" alt="Coco Mademoiselle" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Coco Mademoiselle</h3>
+                        <p class="product-price">Starting from ৳550</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('coco-mademoiselle')">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1590736704728-f4730bb30770" alt="BR 540 Extrait" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">BR 540 Extrait</h3>
+                        <p class="product-price">Starting from ৳300</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('br-540')">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539" alt="Chance Eau Fraîche" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Chance Eau Fraîche</h3>
+                        <p class="product-price">Starting from ৳490</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('chance-fraiche')">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539" alt="Crystal Noir" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Crystal Noir</h3>
+                        <p class="product-price">Starting from ৳550</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('crystal-noir')">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1541643600914-78b084683601" alt="Gucci Flora" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Gucci Flora</h3>
+                        <p class="product-price">Starting from ৳550</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('gucci-flora')">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>6ml</th>
+                            <th>8ml</th>
+                            <th>15ml</th>
+                            <th>Tester (2ml)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Black Opium</td><td>৳550</td><td>৳730</td><td>৳990</td><td>৳185</td></tr>
+                        <tr><td>BR 540 Extrait</td><td>৳300</td><td>৳400</td><td>৳650</td><td>৳100</td></tr>
+                        <tr><td>Chance Eau Fraîche</td><td>৳490</td><td>৳650</td><td>৳950</td><td>৳165</td></tr>
+                        <tr><td>Coco Mademoiselle</td><td>৳550</td><td>৳730</td><td>৳990</td><td>৳185</td></tr>
+                        <tr><td>Crystal Noir</td><td>৳550</td><td>৳730</td><td>৳990</td><td>৳185</td></tr>
+                        <tr><td>Delina</td><td>৳600</td><td>৳800</td><td>৳1110</td><td>৳200</td></tr>
+                        <tr><td>Gucci Bloom</td><td>৳550</td><td>৳730</td><td>৳990</td><td>৳185</td></tr>
+                        <tr><td>Gucci Flora</td><td>৳550</td><td>৳730</td><td>৳990</td><td>৳185</td></tr>
+                        <tr><td>Oud Satin Mood</td><td>৳550</td><td>৳730</td><td>৳990</td><td>৳185</td></tr>
+                        <tr><td>Sweet Addiction</td><td>৳300</td><td>৳400</td><td>৳650</td><td>৳100</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>Customer Testimonials</h2>
+            <p class="testimonials-intro">Hear from our satisfied customers who have found their perfect scent with Fragcy.</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"ক্রিড অ্যাভেন্টাস ফ্র্যাগসি থেকে আমার সিগনেচার সেন্ট হয়ে উঠেছে। গুণমান অসাধারণ এবং স্থায়িত্ব অত্যন্ত ভালো। আমি যেখানেই যাই সেখানেই প্রশংসা পাই!"</p>
+                        <h4>রাহুল মজুমদার</h4>
+                        <span>ঢাকা</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"আমি মাসের পর মাস ধরে ফ্র্যাগসি থেকে ডেলিনা ব্যবহার করছি এবং এটি আমার খুব পছন্দের। সুগন্ধটি অত্যন্ত সুন্দর এবং দীর্ঘস্থায়ী। ১৫মিলি বোতলটি দৈনন্দিন ব্যবহারের জন্য একদম পারফেক্ট!"</p>
+                        <h4>সাবরিনা আহমেদ</h4>
+                        <span>চট্টগ্রাম</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"টেস্টার অপশনটি দারুণ! বড় সাইজে কেনার আগে আমি বেশ কয়েকটি ফ্রাগ্রেন্স ট্রাই করতে পেরেছি। ব্ল্যাক এক্সএস বিশেষ অনুষ্ঠানের জন্য আমার পছন্দের সেন্ট হয়ে উঠেছে।"</p>
+                        <h4>তানভীর হোসেন</h4>
+                        <span>সিলেট</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"ফ্র্যাগসি থেকে গুচ্চি ব্লুম একেবারেই অসাধারণ! সুগন্ধটি আসল এবং সারাদিন টিকে থাকে। ৮মিলি সাইজটি আমার পার্সের জন্য একদম পারফেক্ট। নিশ্চিতভাবেই আরও অর্ডার করব!"</p>
+                        <h4>নুসরাত ফারহানা</h4>
+                        <span>ঢাকা</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="size-guide">
+        <div class="container">
+            <h2>Size Guide</h2>
+            <div class="sizes">
+                <div class="size">
+                    <div class="size-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3>2ml Tester</h3>
+                    <p>Perfect for sampling before committing to a larger size</p>
+                </div>
+                <div class="size">
+                    <div class="size-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>6ml</h3>
+                    <p>Ideal for occasional use or travel</p>
+                </div>
+                <div class="size">
+                    <div class="size-icon">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <h3>8ml</h3>
+                    <p>Great for regular use with excellent value</p>
+                </div>
+                <div class="size">
+                    <div class="size-icon">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <h3>15ml</h3>
+                    <p>Our largest size for daily use and best value</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+8801643250748</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@fragcy.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Dhaka, Bangladesh</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Phone Number">
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://i.ibb.co.com/WN70VCXh/434556057-937261891654399-891974852024126961-n.jpg" alt="Fragcy Logo" class="footer-logo-image">
+                    <p>Premium Fragrances</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#men">Men's Collection</a></li>
+                        <li><a href="#women">Women's Collection</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for new arrivals and special offers</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bot-icon" onclick="toggleBot()">
+        <i class="fas fa-robot"></i>
+    </div>
+    <div class="bot-container" id="botContainer">
+        <iframe src="https://app.vectorshift.ai/chatbots/deployed/67beed22999ab00a10a7af82" class="bot-frame"></iframe>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
