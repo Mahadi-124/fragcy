@@ -6,37 +6,6 @@
     <title>Fragcy - Premium Perfume Store</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        .slider-container {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-        }
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-        .slider img {
-            width: 100%;
-            flex-shrink: 0;
-        }
-        .slider-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-        .slider-button.left {
-            left: 10px;
-        }
-        .slider-button.right {
-            right: 10px;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -104,17 +73,6 @@
         <div class="container">
             <h2>Men's Fragrances</h2>
             <p class="collection-intro">Discover our premium collection of men's fragrances, from fresh aquatics to rich orientals.</p>
-            
-            <div class="slider-container">
-                <div class="slider" id="men-slider">
-                    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f" alt="Acqua Di Gio">
-                    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f" alt="Acqua Media Cologne Fort">
-                    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f" alt="Black Friday">
-                    <!-- Add more images as needed -->
-                </div>
-                <button class="slider-button left" onclick="slideLeft('men-slider')">&#10094;</button>
-                <button class="slider-button right" onclick="slideRight('men-slider')">&#10095;</button>
-            </div>
             
             <div class="product-grid">
                 <div class="product-card">
@@ -742,26 +700,6 @@
     </div>
     <script src="script.js"></script>
     <script>
-        let currentIndex = 0;
-
-        function slideRight(sliderId) {
-            const slider = document.getElementById(sliderId);
-            const totalImages = slider.children.length;
-            currentIndex = (currentIndex + 1) % totalImages;
-            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-
-        function slideLeft(sliderId) {
-            const slider = document.getElementById(sliderId);
-            const totalImages = slider.children.length;
-            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-
-        setInterval(() => {
-            slideRight('men-slider');
-        }, 3000); // Change image every 3 seconds
-
         function toggleBot() {
             var botContainer = document.getElementById('botContainer');
             if (botContainer.style.display === 'none' || botContainer.style.display === '') {
