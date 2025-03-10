@@ -20,6 +20,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#men">Men's Collection</a></li>
                         <li><a href="#women">Women's Collection</a></li>
+                        <li><a href="#unisex">Unisex</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -388,7 +389,39 @@
                         </div>
                     </div>
                 </div>
-                <!-- ...additional product cards for unisex fragrances... -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1590736704728-f4730bb30770" alt="Demo Fragrance 1" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Demo Fragrance 1</h3>
+                        <p class="product-price">Starting from ৳400</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('demo-fragrance-1')">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539" alt="Demo Fragrance 2" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Demo Fragrance 2</h3>
+                        <p class="product-price">Starting from ৳500</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('demo-fragrance-2')">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1541643600914-78b084683601" alt="Demo Fragrance 3" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Demo Fragrance 3</h3>
+                        <p class="product-price">Starting from ৳600</p>
+                        <div class="product-buttons">
+                            <a href="#contact" class="product-btn buy-btn">Buy Now</a>
+                            <button class="product-btn detail-btn" onclick="showDetails('demo-fragrance-3')">Details</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="table-container">
@@ -404,7 +437,9 @@
                     </thead>
                     <tbody>
                         <tr><td>Erba Pura</td><td>৳300</td><td>৳400</td><td>৳650</td><td>৳100</td></tr>
-                        <!-- ...additional rows for unisex fragrances... -->
+                        <tr><td>Demo Fragrance 1</td><td>৳400</td><td>৳500</td><td>৳750</td><td>৳150</td></tr>
+                        <tr><td>Demo Fragrance 2</td><td>৳500</td><td>৳600</td><td>৳850</td><td>৳200</td></tr>
+                        <tr><td>Demo Fragrance 3</td><td>৳600</td><td>৳700</td><td>৳950</td><td>৳250</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -585,5 +620,17 @@
         <iframe src="https://app.vectorshift.ai/chatbots/deployed/67beed22999ab00a10a7af82" class="bot-frame"></iframe>
     </div>
     <script src="script.js"></script>
+    <script>
+        function toggleBot() {
+            var botContainer = document.getElementById('botContainer');
+            if (botContainer.style.display === 'none' || botContainer.style.display === '') {
+                botContainer.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            } else {
+                botContainer.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
 </body>
 </html>
