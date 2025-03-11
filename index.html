@@ -6,6 +6,23 @@
     <title>Fragcy - Premium Perfume Store</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1167005688278794');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1167005688278794&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body>
     <header>
@@ -386,7 +403,7 @@
                         </div>
                     </div>
                 </div>
-            </div
+            </div>
 
             <div class="product-grid">
                 <div class="product-card">
@@ -394,6 +411,7 @@
                     <div class="product-info">
                         <h3 class="product-name">YSL Libre</h3>
                         <p class="product-price">Starting from ৳550</p>
+                        <p>A bold and floral fragrance with lavender and orange blossom, perfect for the confident and free-spirited woman.</p>
                         <div class="product-buttons">
                             <a href="#contact" class="product-btn buy-btn">Buy Now</a>
                             <button class="product-btn detail-btn" onclick="showDetails('ysl-libre')">Details</button>
@@ -643,7 +661,7 @@
                         <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" id="contactForm">
                     <input type="text" placeholder="Your Name" required>
                     <input type="email" placeholder="Your Email" required>
                     <input type="tel" placeholder="Your Phone Number">
@@ -700,6 +718,20 @@
                 document.body.style.overflow = 'auto';
             }
         }
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                message: formData.get('message')
+            };
+            localStorage.setItem('contactFormData', JSON.stringify(data));
+            alert('Your message has been sent!');
+            event.target.reset();
+        });
     </script>
 </body>
 </html>
