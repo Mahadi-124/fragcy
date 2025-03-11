@@ -640,16 +640,16 @@
 
     <section class="contact" id="contact">
         <div class="container">
-            <h2>Contact Us</h2>
+            <h2>Message us! Buy with our chatbot too.</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <p>+8801643250748</p>
+                        <p>+8801860-917351</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <p>info@fragcy.com</p>
+                        <p>fragcy.bd@gmail.com</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -700,7 +700,7 @@
             </div>
         </div>
     </footer>
-    <div class="bot-icon" onclick="toggleBot()">
+    <div class="bot-icon" id="botIcon" onclick="toggleBot()">
         <i class="fas fa-robot"></i>
     </div>
     <div class="bot-container" id="botContainer">
@@ -712,10 +712,18 @@
             var botContainer = document.getElementById('botContainer');
             if (botContainer.style.display === 'none' || botContainer.style.display === '') {
                 botContainer.style.display = 'block';
-                document.body.style.overflow = 'hidden';
+                document.addEventListener('click', closeBotOnClickOutside);
             } else {
                 botContainer.style.display = 'none';
-                document.body.style.overflow = 'auto';
+                document.removeEventListener('click', closeBotOnClickOutside);
+            }
+        }
+
+        function closeBotOnClickOutside(event) {
+            var botContainer = document.getElementById('botContainer');
+            if (!botContainer.contains(event.target) && !event.target.matches('.bot-icon, .bot-icon *')) {
+                botContainer.style.display = 'none';
+                document.removeEventListener('click', closeBotOnClickOutside);
             }
         }
 
@@ -732,6 +740,43 @@
             alert('Your message has been sent!');
             event.target.reset();
         });
+
+        document.querySelectorAll('.buy-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                var botContainer = document.getElementById('botContainer');
+                botContainer.style.display = 'block';
+                document.addEventListener('click', closeBotOnClickOutside);
+            });
+        });
+
+        // Make the bot icon draggable
+        const botIcon = document.getElementById('botIcon');
+        botIcon.addEventListener('mousedown', function(event) {
+            if (event.button !== 0) return; // Only allow left mouse button
+
+            let shiftX = event.clientX - botIcon.getBoundingClientRect().left;
+            let shiftY = event.clientY - botIcon.getBoundingClientRect().top;
+
+            function moveAt(pageX, pageY) {
+                botIcon.style.left = pageX - shiftX + 'px';
+                botIcon.style.top = pageY - shiftY + 'px';
+            }
+
+            function onMouseMove(event) {
+                moveAt(event.pageX, event.pageY);
+            }
+
+            document.addEventListener('mousemove', onMouseMove);
+
+            botIcon.onmouseup = function() {
+                document.removeEventListener('mousemove', onMouseMove);
+                botIcon.onmouseup = null;
+            };
+        });
+
+        botIcon.ondragstart = function() {
+            return false;
+        };
     </script>
 </body>
 </html>
